@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<link rel="stylesheet" href="/styles/style.css" />
+	</head>
+	<body>
+		<main>
+			<section class="section_auth">
+				<div>
+					<h1 class="section_auth-title">Регистрация</h1>
+
+					<form class="section_auth-form form" action="" method="post">
+						<div>
+							<label class="form__label_email" for="email">E-mail<sup>*</sup></label>
+							<input
+								class="form__input_email"
+								type="email"
+								name="email"
+								id="email"
+								placeholder="Введите email"
+								required
+							/>
+						</div>
+
+						<div>
+							<label class="form__label_telegram" for="telegram">Telegram</label>
+							<input
+								class="form__input_telegram"
+								type="text"
+								name="telegram"
+								id="telegram"
+								placeholder="Введите Telegram"
+								required
+							/>
+						</div>
+
+						<div>
+							<label class="form__label_topic" for="topic">Тема<sup>*</sup></label>
+							<select class="form__select_topic" name="topic" id="topic" required>
+								<option class="form__select_topic-opt" value="courses">
+									Приобретение курсов
+								</option>
+								<option class="form__select_topic-opt" value="roadmap">
+									Дорожная карта
+								</option>
+							</select>
+						</div>
+
+						<div>
+							<label class="form__label_comment" for="comment">Комментарий</label>
+							<textarea
+								class="form__textarea_comment"
+								name="comment"
+								id="comment"
+								cols="30"
+								rows="10"
+								placeholder="Введите комментарий"
+							></textarea>
+						</div>
+
+						<div>
+							<button class="form__btn_submit" type="submit">Отправить</button>
+						</div>
+					</form>
+				</div>
+			</section>
+		</main>
+	</body>
+</html>

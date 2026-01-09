@@ -1,0 +1,29 @@
+.section_auth {
+	background-color: #1e1f29;
+}
+
+.section_auth-title {
+	color: #fafafa;
+}
+
+.form {
+}
+
+.form__label_email,
+.form__label_telegram,
+.form__label_topic,
+.form__label_comment {
+	color: #afb2bf;
+}
+.form__input_email,
+.form__input_telegram,
+.form__select_topic,
+.form__textarea_comment,
+.form__select_topic-opt {
+	color: #fafafa;
+	background-color: #2e2d3d;
+}
+.form__btn_submit {
+	background-color: #6c38cc;
+	color: #fafafa;
+}
