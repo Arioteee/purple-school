@@ -1,0 +1,45 @@
+:root {
+	--color-primary: #6c38cc;
+	--color-bg: #16171d;
+	--color-dark: #101114;
+	--color-pink: #e47ad5;
+	--color-bg-light: #2e2d3d;
+	--color-bg-medium: #1e1f29;
+	--color-text: #fafafa;
+	--color-gray: #afb2bf;
+	--color-link-hover: #afb2bf;
+	--color-stroke: #4d5064;
+	/* --color-linear-purple: linear-gradient(158deg, #d77be5 0%, #be63e5 34.69%, #6c38cc 100%); */
+
+	--border-8: 8px;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	background: var(--color-bg);
+
+	font-size: 18px;
+	line-height: 120%;
+	color: var(--color-text);
+	font-family: 'Fira Sans';
+	font-weight: 400;
+	font-style: normal;
+}
+
+a {
+	text-decoration: none;
+	color: var(--color-text);
+}
+
+.container {
+	max-width: calc(1220px - 48px);
+	margin: 0 auto;
+	padding: 0 24px;
+	overflow: hidden;
+}
