@@ -100,3 +100,142 @@
 		width: 100%;
 	}
 }
+
+/* Blog */
+
+.blog {
+	padding: 100px 0;
+}
+
+.blog__body {
+	display: flex;
+	flex-direction: column;
+}
+
+.blog__body_title {
+	margin-top: 8px;
+
+	font-weight: 400;
+	font-size: 46px;
+	line-height: 120%;
+}
+
+.blog__body_paragraph {
+	margin: 32px 0;
+}
+
+.blog__body_social {
+	display: flex;
+	align-items: center;
+	gap: 24px;
+	margin-bottom: 48px;
+}
+
+.article__item {
+	display: flex;
+	align-items: center;
+	gap: 260px;
+	border-radius: var(--border-10);
+	padding: 35px 40px 23px 32px;
+	background-color: #1e1f29;
+}
+
+.article__item:not(:last-child) {
+	margin-bottom: 32px;
+}
+
+.article__item_data_dnv {
+	display: flex;
+	align-items: center;
+	gap: 32px;
+}
+
+.article__item_data-date,
+.article__item_data-views {
+	display: flex;
+	align-items: center;
+	gap: 6px;
+
+	font-size: 16px;
+	color: var(--color-gray);
+}
+
+.article__item_data-title {
+	margin: 12px 0;
+}
+
+.article__item_data-text {
+	font-size: 16px;
+	line-height: 150%;
+}
+
+.article__item_linkRead {
+	cursor: pointer;
+	align-self: baseline;
+	padding: 16px 32px;
+
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 120%;
+	text-align: center;
+	color: #fafafa;
+	background: none;
+	border: 1px solid var(--color-stroke);
+	border-radius: var(--border-10);
+}
+
+.article__item_linkRead:hover {
+	background-color: var(--color-bg-light);
+}
+
+.blog__body_more {
+	margin-top: 52px;
+	align-self: center;
+	text-align: center;
+}
+
+.blog__body_more:hover {
+	background-color: var(--color-bg-light);
+}
+
+@media (max-width: 980px) {
+	.article__item {
+		gap: 100px;
+	}
+}
+
+@media (max-width: 840px) {
+	.article__item {
+		flex-direction: column;
+		gap: 32px;
+	}
+
+	.article__item_linkRead {
+		align-self: center;
+	}
+}
+
+@media (max-width: 480px) {
+	.blog__body_title {
+		font-weight: 700;
+		font-size: 21px;
+	}
+
+	.article__item {
+		padding: 24px 16px;
+	}
+
+	.article__item_data-views,
+	.article__item_data-date {
+		font-size: 14px;
+	}
+
+	.article__item_linkRead {
+		width: calc(100% - 62px);
+	}
+
+	.blog__body_more {
+		align-self: auto;
+		margin-top: 24px;
+	}
+}
