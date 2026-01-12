@@ -13,6 +13,7 @@
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
+	gap: 24px;
 }
 
 .footer__body_top_social a:not(:last-child) {
@@ -23,7 +24,7 @@
 
 .footer__body_mid {
 	display: flex;
-	gap: 80px;
+	gap: 24px 80px;
 	margin-top: 36px;
 	margin-bottom: 48px;
 }
@@ -55,4 +56,19 @@
 .footer__body_bottom_terms {
 	font-size: 16px;
 	line-height: 150%;
+}
+
+@media (max-width: 860px) {
+	.footer__body_mid {
+		flex-direction: column;
+		margin-bottom: 24px;
+	}
+}
+
+@media (max-width: 640px) {
+	.footer__body_top {
+		flex-direction: column;
+		align-items: start;
+		gap: 24px;
+	}
 }
