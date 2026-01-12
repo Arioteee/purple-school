@@ -10,3 +10,9 @@
 
 	background: var(--color-primary);
 }
+
+.strokeBtn {
+	border: 1px solid var(--color-stroke);
+	border-radius: var(--border-10);
+	padding: 16px 32px;
+}
