@@ -2,6 +2,7 @@
 	--color-primary: #6c38cc;
 	--color-bg: #16171d;
 	--color-dark: #101114;
+	--color-bg-dark: #1e1e1e;
 	--color-pink: #e47ad5;
 	--color-bg-light: #2e2d3d;
 	--color-bg-medium: #1e1f29;
@@ -12,6 +13,7 @@
 	/* --color-linear-purple: linear-gradient(158deg, #d77be5 0%, #be63e5 34.69%, #6c38cc 100%); */
 
 	--border-8: 8px;
+	--border-10: 10px;
 }
 
 * {
